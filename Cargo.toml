@@ -1,0 +1,2 @@
+[workspace]
+members = ["ai_macros", "ai_bin"]

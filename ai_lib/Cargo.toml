@@ -1,0 +1,16 @@
+[package]
+name = "ai_lib"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde_json = { version = "1", features = ["preserve_order"] }
+schemars = { version = "~0.8", features = ["preserve_order"] }
+serde = { version = "1", features = ["derive"] }
+reqwest = { version = "0.11", features = ["json", "blocking"] }
+derive_builder = "0.12"
+enum-as-inner = "0.6"
+tokio = { version = "~1", features = ["full"] }
+convert_case = "0.6"

@@ -1,0 +1,17 @@
+[package]
+name = "ai_bin"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ai_macros = { path = "../ai_macros" }
+ai_lib = { path = "../ai_lib" }
+serde_json = { version = "1", features = ["preserve_order"] }
+schemars = { version = "~0.8", features = ["preserve_order"] }
+serde = { version = "1", features = ["derive"] }
+enum-as-inner = "0.6"
+tokio = { version = "~1", features = ["full"] }
+convert_case = "0.6"
+ansi_term = "0.12"
